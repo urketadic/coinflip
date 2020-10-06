@@ -1,0 +1,131 @@
+.coin {
+    min-height: 16em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coinimg {
+    border-radius: 50%;
+    animation: glow 1s infinite alternate;
+}
+
+.flipbtn {
+    border-radius: 20%;
+    font-size: 1.2em;
+    border: solid 1px #ccc;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+    background: #f2d3c4;
+    min-height: 3em;
+    -webkit-box-shadow: 7px 14px 19px -2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 7px 14px 19px -2px rgba(0,0,0,0.49);
+    box-shadow: 7px 14px 19px -2px rgba(0,0,0,0.49);
+}
+
+.flipbtn:hover {
+    cursor: pointer;
+    background: #e99227;
+    color: white;
+}
+
+.flipbtn:focus {
+    outline: none;
+    border-color: #e99227;
+}
+
+
+input {
+    margin-bottom: 0.4em;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding-left: 10px;
+    transition: 0.3s;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  input:focus {
+    border: 1px solid #e99227;
+    outline-width: 0;
+  }
+
+.coinsideopt {
+    height: 39px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 0.2em;
+    padding: 1px 2px;
+    border: 1px solid #ccc;
+  }
+
+.coinsideopt:focus {
+      outline: none;
+      border: 1px solid #e99227
+  }
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    font-family: 'consolas';
+    font-weight: 600;
+}
+
+
+.fixed_headers {
+    width: 750px;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  .fixed_headers th {
+    text-decoration: underline;
+  }
+  .fixed_headers th,
+  .fixed_headers td {
+    padding: 5px;
+    text-align: left;
+  }
+  .fixed_headers td:nth-child(1),
+  .fixed_headers th:nth-child(1) {
+    min-width: 200px;
+  }
+  .fixed_headers td:nth-child(2),
+  .fixed_headers th:nth-child(2) {
+    min-width: 200px;
+  }
+  .fixed_headers td:nth-child(3),
+  .fixed_headers th:nth-child(3) {
+    width: 350px;
+  }
+  .fixed_headers thead {
+    background-color: #333;
+    color: #FDFDFD;
+  }
+  .fixed_headers thead tr {
+    display: block;
+    position: relative;
+  }
+  .fixed_headers tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 320px;
+  }
+  .fixed_headers tbody tr:nth-child(even) {
+    background-color: #DDD;
+  }
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px #f2d3c4;
+    }
+    to {
+      box-shadow: 0 0 10px 20px #f2d3c4;
+    }
+  }
+

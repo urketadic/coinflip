@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.coinflip_section {
+    margin: 0px auto;
+    padding-left: 200px;
+}
+
+.settings_section {
+    width: 200px;
+}

@@ -1,0 +1,1 @@
+export const UPDATE_WALLET = 'UPDATE_WALLET';
